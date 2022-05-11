@@ -12,7 +12,7 @@ function toggleActive() {
   <section class="px-8 py-24 min-h-screen">
     <h1>{{ test }} {{ isActive }}</h1>
     <button
-      class="px-4 py-2 text-white bg-black rounded-full"
+      class="btn px-4 py-2 text-white rounded-full"
       @click="toggleActive"
       :class="{ active: !isActive }"
     >
@@ -22,7 +22,10 @@ function toggleActive() {
 </template>
 
 <style>
-.active {
-  @apply bg-blue-600;
+.btn {
+  background: black;
+}
+.btn.active {
+  background: blue;
 }
 </style>
