@@ -22,10 +22,7 @@ function toggleActive() {
 </template>
 
 <style>
-.btn {
-  background: black;
-}
-.btn.active {
-  background: blue;
+.active {
+  @apply bg-blue-600;
 }
 </style>
